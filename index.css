@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -14,8 +15,7 @@ button{
     font-size: 20px;
     font-family:"fogaza",cursive;
     font-weight: 900;
-    width: 25%;
-    height: 40px;
+    max-width: 25%;
     border: none;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -25,11 +25,12 @@ button{
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 10px;
-    margin-left: 45%;
+    
 }
 
 .main{
     margin-left: 42%;
+   
 
 }
 table{
@@ -60,6 +61,7 @@ td{
 .jj{
     margin-left: 48%;
     
+    
     font-family: "fogaza",cursive;
     font-weight: 1000px;
     font-size: 50px;
@@ -76,6 +78,7 @@ td{
     font-weight: 800;
     margin-top: 30px;
     margin-left:48%;
+
     font-family: "fogaza",cursive;
     color: rgb(57, 24, 24);
     background-color: rgb(171, 211, 37);
@@ -85,4 +88,42 @@ td{
 }
 .win{
     color: darkolivegreen;
+}
+@media (max-width:1200px) {
+    .main{
+        width: 500px;
+        height: 500px;
+    margin-left: 0;}
+    .container1{
+        width: 75%;
+        margin-left: 42%;
+        transition:.2s;}
+        .jj{
+            margin-left: 46%;
+        }
+        .disp{
+            margin-left: 22%;
+        }
+    }
+@media(min-width:430px){
+    .main{
+        width: 500px;
+        height: 500px;
+    margin-left: 0;}
+}
+@media(min-width:800px){
+    .main{
+        width:350px;
+    height:350px;
+    margin-left: 38%;}
+    .container1{
+        width: 75%;
+        margin-left: 42%;
+        transition:.2s;}
+        .jj{
+            margin-left: 46%;
+        }
+        .disp{
+            margin-left: 22%;
+        }
 }

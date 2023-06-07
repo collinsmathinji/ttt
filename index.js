@@ -14,7 +14,7 @@ function thiy(cell){
           //create class of the specific symbol that can be smanipulated in CSS
           toggle();
           }
-          draw()
+          draw();
           //calls the function for alternating change of symbols
         };
       //function for manipulating table data
@@ -54,10 +54,11 @@ document.getElementById("new").addEventListener("click", function() {
     let thi=document.getElementById(i);
     thi.innerHTML="";
     thi.classList.remove("win")
-    toggle()
-    thi.classList.remove(Symbol.toLowerCase()) 
+    thi.classList.remove(Symbol.toLowerCase())
   }
   End=false
+    toggle();
+    score();
 });
 function draw() {
     let filledCount = 0;
@@ -72,3 +73,5 @@ function draw() {
       disp.innerHTML = message;
     }
   }
+
+  
